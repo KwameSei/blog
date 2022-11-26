@@ -1,0 +1,15 @@
+{% extends 'layouts.html' %}
+
+{% block title %} 
+    Blogs Page 
+{% endblock %}
+
+{% block content %} 
+    <h1>Blogs</h1>
+    <ul class="list-group">
+        <!-- Looping through the articles data from the backend -->
+        {% for article in articles %}
+            <li class="list-group-item"><a href="articles/{{article.id}}">{{article.title}}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
