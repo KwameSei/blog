@@ -12,6 +12,7 @@
     {% include 'includes/navbar.html' %}
     
     <div class="container">
+        {% include 'includes/flashed_messages.html' %}
         {% block content %}
         {% endblock %}
     </div>
